@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--js中call和apply都可以实现继承，唯一的一点参数不同，func.call(func1,var1,var2,var3)对应的apply写法为：func.apply(func1,[var1,var2,var3])。
+           JS手册中对call的解释：-->
+           
+           调用一个对象的一个方法，以另一个对象替换当前对象。  
+
+    call([thisObj[,arg1[, arg2[,   [,.argN]]]]])  
+
+		参数  
+		thisObj  
+		可选项。将被用作当前对象的对象。  
+		
+		arg1, arg2,  , argN  
+		可选项。将被传递方法参数序列。  
+		
+		说明  
+		call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。  
+		
+		如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。
+  </body>
+</html>
