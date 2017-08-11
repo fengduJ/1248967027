@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="text1">内容是</div>
+		<button id="btn">点击</button>
+		<script>
+			
+			$("#btn").on("click",function(){
+		
+				var arr=[1,2,5,6,8];
+			   function getMax(arr){
+				var arrLen=arr.length;
+				for(var i=0,ret=arr[0];i<arrLen;i++){
+					ret=Math.max(ret,arr[i])
+				}
+				return ret;
+			}
+			   //这个是普通方法输出的数组中的最大值
+			 //alert(getMax(arr))
+			$("#text1").html(getMax(arr))
+	
+			})
+			
+		</script>
+	</body>
+</html>
